@@ -14,7 +14,7 @@
         android:maxWidth="250dp"
         android:paddingHorizontal="15dp"
         android:paddingVertical="8dp"
-        android:text="Nguyen Ha Xuan Truong"
+        android:text="Tôi là client"
         android:textColor="@color/white"
         android:textSize="16sp" />
 
