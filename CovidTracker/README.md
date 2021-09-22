@@ -1,4 +1,5 @@
 # Chia sẻ API thống kê dữ liệu covid 19 tại Việt Nam.
+# Cập nhật: API đã ngừng hoạt động (tháng 9/2021)
 ## Link API: covid.huukhuongit(.)tk
 ### Thông tin:
 - Dữ liệu được crawl trực tiếp từ website của Bộ Y tế => Thông tin đáng tin cậy, cập nhật thường xuyên.
