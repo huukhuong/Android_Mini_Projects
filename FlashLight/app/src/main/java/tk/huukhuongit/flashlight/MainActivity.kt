@@ -6,14 +6,13 @@ import android.hardware.camera2.CameraAccessException
 import android.hardware.camera2.CameraManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
-
+import java.util.TimerTask
+import java.util.Timer
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,6 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun turnSOSFlash() {
+        if(isSOS)
         Timer().scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
                 if (isSOS) {

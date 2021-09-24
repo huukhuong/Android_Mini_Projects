@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FE554A</color>
+    <color name="gradient_start">#F9881F</color>
+    <color name="gradient_end">#FF774C</color>
+    <color name="accent">#0B735F</color>
+    <color name="black">#2A3037</color>
+    <color name="dark_gray">#C6C9CC</color>
+    <color name="light_gray">#DFE2E5</color>
+    <color name="white">#FCFCFC</color>
+    <color name="background">#F7F7FB</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -11,6 +11,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+@SuppressWarnings("ALL")
 public class AddNoteActivity extends AppCompatActivity {
 
     private ImageButton btnBack, btnSave;
