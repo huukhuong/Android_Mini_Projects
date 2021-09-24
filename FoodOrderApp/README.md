@@ -1,6 +1,6 @@
 ## App Order Food
 ### Ảnh chụp màn hình
-<p float="left">
+<p float="left" style="text-align: center">
   <img src="screenshot/sc1.jpg" width="300">
   <img src="screenshot/sc2.jpg" width="300">
   <img src="screenshot/sc3.jpg" width="300">
