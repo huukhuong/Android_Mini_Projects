@@ -9,9 +9,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="gradient_start">#F8A656</color>
-    <color name="gradient_end">#F18448</color>
-    <color name="gradient_night_start">#062D48</color>
-    <color name="gradient_night_end">#1A719E</color>
+    <color name="gradient_start">#2041DB</color>
+    <color name="gradient_end">#A1BCED</color>
+    <color name="gradient_night_start">#262F4C</color>
+    <color name="gradient_night_end">#293251</color>
 
 </resources>
