@@ -9,7 +9,7 @@
   <img src="screenshot/sc6.jpg" width="300">
   <img src="screenshot/sc7.jpg" width="300">
   <img src="screenshot/sc8.jpg" width="300">
-  <img src="screenshot/sc9.jpg" width="300">
+  <img src="screenshot/sc14.jpg" width="300">
   <img src="screenshot/sc15.jpg" width="300">
   <img src="screenshot/sc16.jpg" width="300">
 </p>
