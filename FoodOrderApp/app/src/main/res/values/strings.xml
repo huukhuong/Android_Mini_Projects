@@ -45,4 +45,12 @@
     <string name="enter_cvv">Enter CVV</string>
     <string name="cvv">CVV</string>
     <string name="pay_now">Pay now</string>
+    <string name="delivery_method">Delivery method</string>
+    <string name="payment">Payment</string>
+    <string name="change">Change</string>
+    <string name="pay_on_arrival">Pay on arrival</string>
+    <string name="pay_with_cash_pos_upon_arrival">Pay with cash/POS upon arrival</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
 </resources>

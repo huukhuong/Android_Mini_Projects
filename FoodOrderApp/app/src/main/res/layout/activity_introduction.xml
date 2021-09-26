@@ -94,7 +94,7 @@
             android:layout_marginHorizontal="@dimen/_4sdp"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginVertical="@dimen/_16sdp"
-            android:background="@drawable/btn_transparent"
+            android:background="@drawable/btn_secondary"
             android:backgroundTint="@color/white"
             android:text="@string/login"
             android:textAllCaps="false"
