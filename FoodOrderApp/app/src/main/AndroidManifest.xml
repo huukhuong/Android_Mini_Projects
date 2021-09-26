@@ -11,13 +11,7 @@
         android:theme="@style/Theme.FoodOrderApp">
         <activity
             android:name=".controller.PaymentActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".controller.OrderSuccessActivity"
             android:exported="true" />
@@ -39,7 +33,11 @@
         <activity
             android:name=".controller.SplashScreenActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

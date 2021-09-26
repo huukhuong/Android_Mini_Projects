@@ -8,7 +8,8 @@ import com.example.foodorderapp.R
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var btnForgotPassword:TextView
+    private lateinit var btnForgotPassword: TextView
+    private lateinit var btnRegister: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,15 +20,23 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun addControls() {
+        btnRegister = findViewById(R.id.btnRegister)
         btnForgotPassword = findViewById(R.id.btnForgotPassword)
     }
 
     private fun addEvents() {
+        btnRegister.setOnClickListener { startActitvityRegister() }
         btnForgotPassword.setOnClickListener { startActitvityForgotPassword() }
+    }
+
+    private fun startActitvityRegister() {
+        startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
+        finish()
     }
 
     private fun startActitvityForgotPassword() {
         startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
+        finish()
     }
 
 }

@@ -1,5 +1,6 @@
 package com.example.foodorderapp.controller
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -8,6 +9,7 @@ import android.text.Editable
 
 import android.text.TextWatcher
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.*
 
 class OTPActivity : AppCompatActivity() {
@@ -18,9 +20,11 @@ class OTPActivity : AppCompatActivity() {
     private lateinit var otp3: EditText
     private lateinit var otp4: EditText
     private lateinit var txvCountdown: TextView
+    private lateinit var txvEmail: TextView
     private lateinit var containerResend: LinearLayout
     private lateinit var txvResendOTP: TextView
     private lateinit var btnResetPassword: Button
+    private lateinit var email: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +36,7 @@ class OTPActivity : AppCompatActivity() {
 
     private fun addControls() {
         txvCancel = findViewById(R.id.txvCancel)
+        txvEmail = findViewById(R.id.txvEmail)
         otp1 = findViewById(R.id.otp1)
         otp2 = findViewById(R.id.otp2)
         otp3 = findViewById(R.id.otp3)
@@ -42,6 +47,9 @@ class OTPActivity : AppCompatActivity() {
         btnResetPassword = findViewById(R.id.btnResetPassword)
 
         otp1.requestFocus()
+        val i: Intent = intent
+        email = i.getStringExtra("strEmail").toString()
+        txvEmail.text = email
     }
 
     private fun addEvents() {
@@ -102,8 +110,8 @@ class OTPActivity : AppCompatActivity() {
         btnResetPassword.setOnClickListener { processValidateOTP() }
         txvResendOTP.setOnClickListener { processResendOTP() }
 
-        var countdown = 10
-        object : CountDownTimer(11000, 1000) {
+        var countdown: Long = 30
+        object : CountDownTimer((countdown + 1) * 1000, 1000) {
 
             override fun onTick(millisUntilFinished: Long) {
                 txvCountdown.text = getString(R.string.resend_otp_in) + " $countdown" + "s"
@@ -123,6 +131,15 @@ class OTPActivity : AppCompatActivity() {
 
     private fun processValidateOTP() {
         Toast.makeText(this, "Click button", Toast.LENGTH_SHORT).show()
+        errorOTP()
+    }
+
+    private fun errorOTP() {
+        val anim = AnimationUtils.loadAnimation(this, R.anim.shake_control)
+        otp1.startAnimation(anim)
+        otp2.startAnimation(anim)
+        otp3.startAnimation(anim)
+        otp4.startAnimation(anim)
     }
 
 }
