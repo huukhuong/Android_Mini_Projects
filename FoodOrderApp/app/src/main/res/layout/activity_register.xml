@@ -22,9 +22,9 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_34sdp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_logo_mini" />
+                android:src="@drawable/ic_logo" />
 
         </LinearLayout>
 
@@ -47,7 +47,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/form_textview_padding"
         android:paddingBottom="@dimen/_6sdp"
         android:text="@string/create_account"
         android:textColor="@color/black"
@@ -57,7 +57,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/form_textview_padding"
         android:paddingBottom="@dimen/_22sdp"
         android:text="@string/register_description"
         android:textColor="@color/black"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_8sdp"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/form_textview_padding"
             android:text="@string/email_address"
             android:textColor="@color/black" />
 
@@ -81,9 +81,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:background="@drawable/textfield"
-            android:inputType="textEmailAddress"
+            android:background="@drawable/form_input_text"
             android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
             android:paddingHorizontal="@dimen/edit_text_horizontal"
             android:paddingVertical="@dimen/edit_text_vertical"
             android:textSize="@dimen/_14sdp" />
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_8sdp"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/form_textview_padding"
             android:text="@string/password"
             android:textColor="@color/black" />
 
@@ -108,7 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:background="@drawable/textfield"
+            android:background="@drawable/form_input_text"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
             android:paddingHorizontal="@dimen/edit_text_horizontal"
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_8sdp"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/form_textview_padding"
             android:text="@string/confirm_password"
             android:textColor="@color/black" />
 
@@ -135,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:background="@drawable/textfield"
+            android:background="@drawable/form_input_text"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:paddingHorizontal="@dimen/edit_text_horizontal"
@@ -149,30 +149,30 @@
         android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="vertical"
-        android:paddingVertical="@dimen/_14sdp"
-        android:paddingHorizontal="@dimen/_22sdp">
+        android:paddingHorizontal="@dimen/_22sdp"
+        android:paddingVertical="@dimen/_14sdp">
 
         <android.widget.Button
             android:id="@+id/btnGoogleLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/button_google"
+            android:background="@drawable/btn_google"
             android:drawableLeft="@drawable/ic_google"
             android:drawablePadding="@dimen/_4sdp"
-            android:text="@string/sign_in_with_google"
-            android:textAllCaps="false"
             android:gravity="center"
             android:paddingHorizontal="@dimen/_14sdp"
-            android:paddingVertical="@dimen/_10sdp" />
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/sign_in_with_google"
+            android:textAllCaps="false" />
 
         <android.widget.Button
-            android:layout_marginVertical="@dimen/_16sdp"
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginHorizontal="@dimen/_4sdp"
-            android:background="@drawable/button_primary"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:background="@drawable/btn_primary"
             android:text="@string/create_account"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -184,7 +184,7 @@
             android:layout_height="@dimen/_40sdp"
             android:layout_marginHorizontal="@dimen/_4sdp"
             android:layout_marginVertical="@dimen/_4sdp"
-            android:background="@drawable/button_transparent"
+            android:background="@drawable/btn_transparent"
             android:backgroundTint="@color/white"
             android:text="@string/login_to_my_account"
             android:textAllCaps="false"

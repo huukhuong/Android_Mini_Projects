@@ -29,4 +29,10 @@
     <string name="cancel_underline"><u>Cancel</u></string>
     <string name="forgot_password">Forgot password</string>
     <string name="forgot_pass_description">Enter your email address to request a password reset.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_pass_description">A reset code has been sent to your email</string>
+    <string name="enter_code">Enter code</string>
+    <string name="didn_t_receive_an_otp">Didn\'t receive an OTP?</string>
+    <string name="resend_otp"><b><u>Resend OTP</u></b></string>
+    <string name="resend_otp_in">Resend OTP in</string>
 </resources>
