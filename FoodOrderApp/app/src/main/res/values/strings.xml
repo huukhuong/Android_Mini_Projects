@@ -35,4 +35,14 @@
     <string name="didn_t_receive_an_otp">Didn\'t receive an OTP?</string>
     <string name="resend_otp"><b><u>Resend OTP</u></b></string>
     <string name="resend_otp_in">Resend OTP in</string>
+    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed</string>
+    <string name="sit_and_relax_while_your_orders_is_being_worked_on_it_ll_take_5min_before_you_get_it">Sit and relax while your orders is being worked on . It’ll take 5min before you get it</string>
+    <string name="go_back_to_home">Go back to home</string>
+    <string name="card_details">Card details</string>
+    <string name="enter_card_details">Enter card details</string>
+    <string name="exp_date">Exp date</string>
+    <string name="dd_mm">DD/MM</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="cvv">CVV</string>
+    <string name="pay_now">Pay now</string>
 </resources>
