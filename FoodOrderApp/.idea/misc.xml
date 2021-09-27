@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../layout/custom_preview.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/drawable-v31/btn_primary.xml" value="0.2712962962962963" />
         <entry key="app/src/main/res/drawable/background_button.xml" value="0.2348684210526316" />
-        <entry key="app/src/main/res/drawable/btn_primary.xml" value="0.371875" />
-        <entry key="app/src/main/res/drawable/btn_primary_default.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/btn_primary.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable/btn_primary_default.xml" value="0.5" />
         <entry key="app/src/main/res/drawable/btn_primary_focus.xml" value="0.1037037037037037" />
         <entry key="app/src/main/res/drawable/btn_secondary.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/btn_secondary_default.xml" value="0.2140625" />
@@ -17,6 +18,7 @@
         <entry key="app/src/main/res/drawable/form_opt_text.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/google_button.xml" value="0.2348684210526316" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.2765625" />
+        <entry key="app/src/main/res/drawable/ic_property_1_button_primary.xml" value="0.2712962962962963" />
         <entry key="app/src/main/res/drawable/ic_radius_rectangle.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/primary_button.xml" value="0.2348684210526316" />
         <entry key="app/src/main/res/drawable/textfield.xml" value="0.2348684210526316" />
