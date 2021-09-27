@@ -54,4 +54,9 @@
     <string name="subtotal">Subtotal</string>
     <string name="proceed_to_payment">Proceed to Payment</string>
     <string name="online_payment">Online payment</string>
+    <string name="province">Province</string>
+    <string name="district">District</string>
+    <string name="ward">Ward</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="ok">OK</string>
 </resources>

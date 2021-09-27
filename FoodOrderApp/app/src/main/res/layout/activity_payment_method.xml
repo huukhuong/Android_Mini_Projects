@@ -34,12 +34,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paymentHeading"
-        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginVertical="@dimen/_5sdp">
 
             <TextView
@@ -48,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:text="137 Teaticket Hwy, East Falmouth MA 2536"
                 android:textColor="@color/black"
@@ -57,8 +58,12 @@
                 android:id="@+id/btnChangeAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical|end"
                 android:text="@string/change"
                 android:textColor="@color/primary"
                 android:textSize="@dimen/_12sdp"
@@ -68,7 +73,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_25sdp"
             android:layout_marginVertical="@dimen/_5sdp">
 
             <TextView
@@ -85,8 +90,12 @@
                 android:id="@+id/btnChangePhoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:layout_centerInParent="true"
+                android:gravity="center_vertical|end"
                 android:text="@string/change"
                 android:textColor="@color/primary"
                 android:textSize="@dimen/_12sdp"

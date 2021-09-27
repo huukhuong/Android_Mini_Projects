@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="@string/province"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp">
+
+                <Spinner
+                    android:id="@+id/spinnerProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:spinnerMode="dialog"
+                    tools:listitem="Hello" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="@string/district"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp">
+
+                <Spinner
+                    android:id="@+id/spinnerDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="@string/ward"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10sdp">
+
+                <Spinner
+                    android:id="@+id/spinnerWard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:text="Details address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/text_area"
+                android:gravity="start"
+                android:hint="@string/enter_your_address"
+                android:maxLines="4"
+                android:minLines="4"
+                android:padding="@dimen/_6sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:textSize="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/btn_minize"
+                    android:text="@string/cancel" />
+
+                <android.widget.Button
+                    android:textSize="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:background="@drawable/btn_minize"
+                    android:text="@string/ok"
+                    android:textColor="@color/primary" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

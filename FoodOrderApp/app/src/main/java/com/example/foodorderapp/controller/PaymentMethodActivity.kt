@@ -64,30 +64,34 @@ class PaymentMethodActivity : AppCompatActivity() {
         btnPayStripe.setOnClickListener { setMethodToPayStripe() }
     }
 
+    private val provinces = ArrayList<Province>()
 
     private fun processChangeAddress() {
-        val provinces = ArrayList<Province>()
-        val json: JSONArray = readJson("vietnam.json")
-        for (i in 0 until json.length()) {
-            val province = json.getJSONObject(i)
-            val name = province.getString("name")
-            val districtsJSON = province.getJSONArray("districts")
-            val districtsArray = ArrayList<District>()
-            for (j in 0 until districtsJSON.length()) {
-                val district = districtsJSON.getJSONObject(j)
-                val districtName = district.getString("name")
-                val wardsJSON = district.getJSONArray("wards")
-                val wardsArray = ArrayList<Ward>()
-                for (k in 0 until wardsJSON.length()) {
-                    val ward = wardsJSON.getJSONObject(k)
-                    val wardName = ward.getString("name")
-                    val wardPrefix = ward.getString("prefix")
-                    wardsArray.add(Ward(wardName, wardPrefix))
+        if (provinces.isEmpty()) {
+            val json: JSONArray = readJson("vietnam.json")
+            for (i in 0 until json.length()) {
+                val province = json.getJSONObject(i)
+                val name = province.getString("name")
+                val districtsJSON = province.getJSONArray("districts")
+                val districtsArray = ArrayList<District>()
+                for (j in 0 until districtsJSON.length()) {
+                    val district = districtsJSON.getJSONObject(j)
+                    val districtName = district.getString("name")
+                    val wardsJSON = district.getJSONArray("wards")
+                    val wardsArray = ArrayList<Ward>()
+                    for (k in 0 until wardsJSON.length()) {
+                        val ward = wardsJSON.getJSONObject(k)
+                        val wardName = ward.getString("name")
+                        val wardPrefix = ward.getString("prefix")
+                        wardsArray.add(Ward(wardName, wardPrefix))
+                    }
+                    districtsArray.add(District(districtName, wardsArray))
                 }
-                districtsArray.add(District(districtName, wardsArray))
+                provinces.add(Province(name, districtsArray))
             }
-            provinces.add(Province(name, districtsArray))
         }
+        var dialogChangeAddress:DialogChangeAddress = DialogChangeAddress(provinces, txvAddress)
+        dialogChangeAddress.show(supportFragmentManager, "changeAddressDialog")
     }
 
     private fun processChangePhoneNumber() {
