@@ -34,13 +34,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paymentHeading"
-        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_10sdp">
+            android:layout_marginVertical="@dimen/_5sdp">
 
             <TextView
                 android:id="@+id/txvAddress"
@@ -48,9 +48,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
+                android:maxLines="2"
                 android:text="137 Teaticket Hwy, East Falmouth MA 2536"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <TextView
                 android:id="@+id/btnChangeAddress"
@@ -60,7 +61,7 @@
                 android:layout_centerInParent="true"
                 android:text="@string/change"
                 android:textColor="@color/primary"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -68,7 +69,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_10sdp">
+            android:layout_marginVertical="@dimen/_5sdp">
 
             <TextView
                 android:id="@+id/txvPhoneNumber"
@@ -76,9 +77,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
-                android:text="0786.506.577"
+                android:text="+234 9011039271"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <TextView
                 android:id="@+id/btnChangePhoneNumber"
@@ -88,7 +89,7 @@
                 android:layout_centerInParent="true"
                 android:text="@string/change"
                 android:textColor="@color/primary"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
@@ -106,41 +107,107 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/containerPayment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/paymentMethod"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/ic_radius_rectangle"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="@dimen/_10sdp">
+        android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/payOnArrival"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:buttonTint="@color/primary"
-            android:checked="true" />
+        <LinearLayout
+            android:id="@+id/containerPayOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/ic_radius_rectangle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <RadioButton
+                android:id="@+id/btnPayOnline"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:buttonTint="@color/primary"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/online_payment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPayVisa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_btn_pay_visa_selected" />
+
+            <ImageButton
+                android:id="@+id/btnPayPaypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_btn_pay_paypal" />
+
+            <ImageButton
+                android:id="@+id/btnPayStripe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_btn_pay_stripe" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerPayOnArrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/ic_radius_rectangle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <RadioButton
+                android:id="@+id/btnPayOnArrival"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:buttonTint="@color/primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/pay_on_arrival"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:text="@string/pay_on_arrival"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_14sdp" />
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/pay_with_cash_pos_upon_arrival"
+            android:textColor="@color/primary" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/containerPayment"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_4sdp"
-        android:text="@string/pay_with_cash_pos_upon_arrival"
-        android:textColor="@color/primary" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -201,9 +268,9 @@
         </RelativeLayout>
 
         <View
-            android:layout_marginVertical="@dimen/_4sdp"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_1sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
             android:background="@color/dark_gray" />
 
         <RelativeLayout
@@ -237,11 +304,11 @@
             android:id="@+id/btnPayment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/btn_primary"
             android:text="@string/proceed_to_payment"
             android:textAllCaps="false"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp" />
 
