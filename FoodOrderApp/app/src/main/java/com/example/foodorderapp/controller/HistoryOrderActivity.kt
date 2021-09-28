@@ -2,6 +2,7 @@ package com.example.foodorderapp.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodorderapp.R
 import com.example.foodorderapp.adapter.AdapterItemCart
@@ -24,7 +25,7 @@ class HistoryOrderActivity : AppCompatActivity() {
             list.add(
                 ItemCart(
                     i,
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlT4-2sZGD2ogTEacK-C2iNMK59xNBYL6NYcSmfe2rI35XIiJPygT0DdIP1dyo8FkeW0&usqp=CAU",
+                    "https://cdn.huongnghiepaau.com/wp-content/uploads/2019/01/hamburger-nhan-thit-heo.jpg",
                     "Hamburger",
                     "Delicious",
                     3
@@ -32,6 +33,7 @@ class HistoryOrderActivity : AppCompatActivity() {
             )
         }
         var adapter = AdapterItemCart(list)
+        rcv.layoutManager = LinearLayoutManager(this)
         rcv.adapter = adapter
     }
 

@@ -89,8 +89,8 @@
 
             <android.widget.ImageButton
                 android:id="@+id/btnRemove"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/btn_circle"
                 android:gravity="center"
@@ -106,13 +106,13 @@
                 android:paddingHorizontal="@dimen/_5sdp"
                 android:text="1"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
 
             <android.widget.ImageButton
                 android:id="@+id/btnAdd"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/btn_circle"
                 android:gravity="center_horizontal|top"

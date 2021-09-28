@@ -1,5 +1,6 @@
 package com.example.foodorderapp.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,7 +23,7 @@ class AdapterItemCart(private var list: ArrayList<ItemCart>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ItemCartViewHolder, position: Int) {
         val item = list[position]
-        Picasso.get().load(item.img).into(holder.imgProduct)
+        holder.imgProduct.setImageResource(R.drawable.hamburger)
         holder.txvProductName.text = item.name
         holder.txvProductDetail.text = item.details
         holder.txvQuantity.text = item.quantity.toString()
@@ -51,13 +52,13 @@ class AdapterItemCart(private var list: ArrayList<ItemCart>) : RecyclerView.Adap
         private fun minusQuantity() {
             var qty: Int = txvQuantity.text.toString().toInt()
             qty -= 1
-            txvQuantity.setText(qty)
+            txvQuantity.text = qty.toString()
         }
 
         private fun addQuantity() {
             var qty: Int = txvQuantity.text.toString().toInt()
             qty += 1
-            txvQuantity.setText(qty)
+            txvQuantity.text = qty.toString()
         }
 
     }
